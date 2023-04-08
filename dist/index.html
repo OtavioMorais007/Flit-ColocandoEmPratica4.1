@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de carros</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h1>Cadastro de carros</h1>
+      <form onsubmit="saveCar()">
+        <div class="card">
+          <div class="card-body">
+            <label for="brand">Marca:</label>
+            <input type="text" name="brand" id="brand" placeholder="Audi" />
+          </div>
+
+          <div class="card-body">
+            <label for="model">Modelo:</label>
+            <input type="text" name="model" id="model" placeholder="Q3" />
+          </div>
+
+          <div class="card-body">
+            <label for="value">Valor:</label>
+            <input
+              type="text"
+              name="value"
+              id="value"
+              placeholder="R$140.000"
+            />
+          </div>
+
+          <div class="card-body">
+            <label for="year">Ano:</label>
+            <input type="text" name="year" id="year" placeholder="2018" />
+          </div>
+
+          <div class="card-body">
+            <label for="color">Cor:</label>
+            <input type="text" name="color" id="color" placeholder="Preto" />
+          </div>
+
+          <div class="card-body">
+            <label for="automatic">Transmissão automática:</label>
+            <select name="automatic" id="automatic">
+              <option value="default" selected>Padrão</option>
+              <option value="true">Verdadeiro</option>
+              <option value="false">Falso</option>
+            </select>
+          </div>
+          <div class="card-body">
+            <button type="submit" class="btn">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
